@@ -1,0 +1,83 @@
+a{
+    text-decoration: none;
+    background: linear-gradient(#98CF40, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+/* HEADER */
+#cabezera {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 200px;
+    background: url(Media/Nubes.webp);
+    background-size: contain;
+    animation: paisaje 2s linear infinite;
+}
+
+@keyframes paisaje {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: -600px;
+    }
+}
+
+#muñeco {
+    /*se crea un fondo de imagen con un zombi*/
+    position: absolute;
+    height: 120px;
+    width: 85px;
+    background-image: url(Media/Zombies.png);
+    animation: correr 2s infinite steps(5);
+    /*se ponen tantos steps como sprite tenga la imagen*/
+}
+
+@keyframes correr {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: -456px;
+    }
+}
+
+#navegador {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#navegador div {
+    font-family: "Creepster", system-ui;
+    text-decoration: none;
+    font-size: 40px;
+    background: linear-gradient(#98CF40, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+/* FIN HEADER */
+/* CUERPO */
+#cuerpo{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: repeat;
+    background-image: url(Media/68744923-pixel-arte-del-juego-del-túnel-subterráneo-de-fondo-con-tierra-y-hierba.jpg);
+}
+
+#info{
+    font-family: "Creepster", system-ui;
+    background: linear-gradient(#98CF40, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+/* FIN CUERPO */
